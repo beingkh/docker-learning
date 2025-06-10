@@ -10,5 +10,5 @@ RUN rm -rf /usr/share/nginx/html/index.html
 
 ADD dwsample1-tar.tar /tmp/
 
-RUN chmod +r /usr/share/nginx/html/index.html   
+# RUN chmod +r /usr/share/nginx/html/index.html   
 CMD ["nginx", "-g", "daemon off;"]
