@@ -2,7 +2,7 @@ FROM almalinux:9
 RUN dnf install nginx -y 
 
 #removing index.html
-
+RUN rm -rf /usr/share/nginx/html/index.html
 #Copying custom index.html
 COPY index.html /usr/share/nginx/html/index.html
 
